@@ -1,8 +1,5 @@
 ## color pallets based on eye shadow pallets
 
-
-
-
 colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
   library(ggplot2)
   library(cowplot)
@@ -96,15 +93,6 @@ colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
   }
 }
 
-colouRpop(pallet = "limoncello", show_me = TRUE)
-colouRpop(pallet = "big_poppy", show_me = TRUE)
-colouRpop(pallet = "blowin_smoke", show_me = TRUE)
-colouRpop(pallet = "youre_golden", show_me = TRUE)
-colouRpop(pallet = "lust_for_dark", show_me = TRUE)
-colouRpop(pallet = "so_very_lovely", show_me = TRUE)
-colouRpop(pallet = "the_child", show_me = TRUE)
-colouRpop(pallet = "malibu_barbie", show_me = TRUE)
-colouRpop(pallet = "baroque", show_me = TRUE)
 
 
 
