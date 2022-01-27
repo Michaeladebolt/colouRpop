@@ -20,9 +20,13 @@ colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
   big_poppy <- c("#EFB19A", "#F5A87E", "#D96336", "#C95731",
                  "#C95731", "#AB3F1E", "#AE3F2E", "#953C2E", "#662B25")
 
+  blowin_smoke <- c("#F4F8F4", "#6E6F68", "#D8DACF",
+                    "#6C7070", "#B4B3BB", "#887D84",
+                    "#3B393A", "#7A6F6A", "#353334")
+
   # Combine all the pallets in a list
   all_pallets <- list(lust_for_dark, limoncello, so_very_lovely,
-                      big_poppy)
+                      big_poppy, blowin_smoke)
 
   # assign the pallets depending on what the user wants
   if ( pallet == "lust_for_dark") {
@@ -31,8 +35,10 @@ colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
     pallet_choice <- all_pallets[[2]]
   }  else if (pallet == "so_very_lovely") {
     pallet_choice <- all_pallets[[3]]
+  } else if (pallet == "big_poppy") {
+    pallet_choice <- all_pallets[[4]]
   } else {
-    pallet_choice <- all_pallets[[4]] #big poppy
+    pallet_choice <- all_pallets[[5]] #blowin smoke
   }
 
   if(show_me == TRUE){
@@ -60,6 +66,7 @@ colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
 
 colouRpop(pallet = "limoncello", show_me = TRUE)
 colouRpop(pallet = "big_poppy", show_me = TRUE)
+colouRpop(pallet = "blowin_smoke", show_me = TRUE)
 
 
 
