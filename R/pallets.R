@@ -1,8 +1,5 @@
 ## color pallets based on eye shadow pallets
 
-
-
-
 colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
   library(ggplot2)
   library(cowplot)
@@ -23,6 +20,7 @@ colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
   big_poppy <- c("#EFB19A", "#F5A87E", "#D96336", "#C95731",
                  "#C95731", "#AB3F1E", "#AE3F2E", "#953C2E", "#662B25")
 
+  # Combine all the pallets in a list
   all_pallets <- list(lust_for_dark, limoncello, so_very_lovely,
                       big_poppy)
 
@@ -38,40 +36,29 @@ colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
   }
 
   if(show_me == TRUE){
-    # Create demo plot of the colors to print
+    # Create demo plot of the colors to print - would be fun to print them
+    # and make them look like an eyeshadow pallet!
     cute_plot <- ggplot(data.frame(x = seq(1:length(pallet_choice)),
                                    y = seq(1:length(pallet_choice)) ),
                         aes(x = x, y = y)) +
       geom_point(color = pallet_choice, size = 12) +
       theme_void()
-
-    # plot( seq(1:length(pallet_choice)),
-    #        col = pallet_choice,
-    #        pch = 16,
-    #        cex = 5,
-    #        xlab=pallet,
-    #        ylab="",
-    #        main = paste0("Number of unique colors: " ,
-    #                     length(pallet_choice) ) )
-
-    #img_plt <- ggdraw() + draw_image("big_poppy.png")
-    # Combine picture and demo plot
-    #plot_grid(demo_plot, img_plt, ncol = 2)
-
+    # img_plt <- ggdraw() + draw_image("big_poppy.png")
+    # #Combine picture and demo plot
+    # plot_grid(cute_plot, img_plt, nrow = 1)
   } else {
     # do nothing
   }
-  # return the color pallet
 
+  # Conditional return!
   if(show_me == TRUE){
     return(cute_plot)
-
   }else{
-
     return(pallet_choice)
   }
 }
 
+colouRpop(pallet = "limoncello", show_me = TRUE)
 colouRpop(pallet = "big_poppy", show_me = TRUE)
 
 
