@@ -42,11 +42,24 @@ colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
                "#9F786B", "#908F92", "#533732", "#363333",
                "#3C3644")
 
+  its_a_mood <- c("#254C57", "#F3D893", "#65310F", "#4F2B2F",
+                  "#965E4D", "#6C4646", "#4A3D46", "#CA8068",
+                  "#B09490", "#E6A17A", "#A97B62", "#315249",
+                  "#325F66", "#67443A", "#3E6C7C", "#612117",
+                  "#715B2C", "#BD664B", "#BEB6AC", "#D6B78B",
+                  "#D5B6A4", "#5D4760", "#E1BFA4", "#C29485",
+                  "#869B95", "#735C7A", "#816243", "#907B63")
+
+  its_a_princess_thing <- c("#E9C3B0", "#EDA8A5", "#DF9789", "#AE765D", "#9C5F4D",
+                            "#F6EEDA", "#E1BFA6", "#DD9C9B", "#E5B279", "#DADBD6",
+                            "#B36969", "#A45D88", "#865D70", "#8C645C", "#626368")
+
+
 
   # Combine all the pallets in a list
   all_pallets <- list(lust_for_dark, limoncello, so_very_lovely,
                       big_poppy, blowin_smoke, youre_golden,
-                      the_child, malibu_barbie, baroque)
+                      the_child, malibu_barbie, baroque, its_a_mood, its_a_princess_thing)
 
   # assign the pallets depending on what the user wants
   if ( pallet == "lust_for_dark") {
@@ -65,17 +78,28 @@ colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
     pallet_choice <- all_pallets[[7]]
   } else if (pallet == "malibu_barbie") {
     pallet_choice <- all_pallets[[8]]
+  } else if (pallet == "baroque") {
+    pallet_choice <- all_pallets[[9]]
+  } else if (pallet == "its_a_mood") {
+    pallet_choice <- all_pallets[[10]]
   } else {
-    pallet_choice <- all_pallets[[9]] #baroque
+    pallet_choice <- all_pallets[[11]] #its a princess thing
   }
 
   if(show_me == TRUE){
     # Create demo plot of the colors to print - would be fun to print them
     # and make them look like an eyeshadow pallet!
-    cute_plot <- ggplot(data.frame(x = seq(1:length(pallet_choice)),
-                                   y = seq(1:length(pallet_choice)) ),
-                        aes(x = x, y = y)) +
-      geom_point(color = pallet_choice, size = 12) +
+    # cute_plot <- ggplot(data.frame(x = seq(1:length(pallet_choice)),
+    #                                y = seq(1:length(pallet_choice)) ),
+    #                     aes(x = x, y = y)) +
+    #   geom_point(color = pallet_choice, size = 12) +
+    #   theme_void() +
+    #   ggtitle(pallet)
+    cute_plot <- ggplot(data = data.frame(name = as.factor(seq(1:length(pallet_choice))),
+                                          value = rep(length(pallet_choice))),
+                        aes(x = name, y = value)) +
+      geom_bar(stat = "identity",
+               fill = pallet_choice) +
       theme_void() +
       ggtitle(pallet)
     # img_plt <- ggdraw() + draw_image("big_poppy.png")
