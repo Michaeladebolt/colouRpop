@@ -1,6 +1,6 @@
 # colouRpop
 
-I made some color pallets based on ColourPop's eyeshadow pallets! Are they the most practical color pallets to make figures with? 
+I made some color palettes based on ColourPop's eyeshadow paletts! Are they the most practical color palettes to make figures with? 
 
 Of course not! But are they fun? I think so! 
 
@@ -16,16 +16,16 @@ library(colouRpop)
 
 ```
 
-After you've installed the package, to preview what a pallet looks like you can run: 
+After you've installed the package, to preview what a palette looks like you can run: 
 
 ```
 
-colouRpop(pallet = "youre_golden", show_me = TRUE)
-colouRpop(pallet = "its_a_mood", show_me = TRUE)
+colouRpop(palette = "youre_golden", show_me = TRUE)
+colouRpop(palette = "its_a_mood", show_me = TRUE)
 
 ```
 
-To use a pallet in a figure, change the `show_me` argument to FALSE. You can use the function directly in a plot, or save the output to an object to use in a plot. For example:
+To use a palette in a figure, delete the `show_me` argument, or change it to `FALSE` (the default is `FALSE`). You can use the `colouRpop` function directly in a plot, or save the output to an object to use in a plot. For example:
 
 ```
 
@@ -34,7 +34,7 @@ fake_data <- data.frame(x = as.factor(rnorm(n = 9, mean = 5, sd = 1) ),
 
 ggplot(data = fake_data, 
        aes(x = x, y = y)) +
-  geom_point(color = colouRpop(pallet = "big_poppy"), 
+  geom_point(color = colouRpop(palette = "big_poppy"), 
              size = 12.5) +
   theme_void() 
 
@@ -50,7 +50,7 @@ You can also save the output of the function to an object, and then use that obj
 
 ```
 
-colors <- colouRpop(pallet = "its_a_mood", show_me = FALSE)
+colors <- colouRpop(palette = "its_a_mood", show_me = FALSE)
 
 fake_data <- data.frame(x = as.factor(rnorm(n = 28, mean = 5, sd = 1) ),
                         y = as.factor(rnorm(n = 28, mean = 5, sd = 1)))
@@ -65,7 +65,7 @@ ggplot(data = fake_data,
 
 ![image](https://user-images.githubusercontent.com/32584911/151461131-902f27c3-e807-4762-b7ce-33a7eb6d3008.png)
 
-Below are pictures of the original pallets. These images were taken from ColourPop's website: https://colourpop.com/
+Below are pictures of the original palettes. These images were taken from ColourPop's website: https://colourpop.com/
 
 ![Slide1](https://user-images.githubusercontent.com/32584911/151461327-c540d635-1c3f-4679-b654-de96dcadc5f2.jpeg)
 ![Slide2](https://user-images.githubusercontent.com/32584911/151461331-779862ed-009e-4951-b9f6-0fa86bbd8e79.jpeg)
