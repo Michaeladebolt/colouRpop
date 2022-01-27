@@ -1,5 +1,8 @@
 ## color pallets based on eye shadow pallets
 
+
+
+
 colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
   library(ggplot2)
   library(cowplot)
@@ -30,9 +33,23 @@ colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
                     "#C18762", "#945448", "#CA978A", "#C3755F", "#8C5C52", "#886C5E",
                     "#62413C", "#9A4C3F", "#694341", "#753323", "#2F4E59", "#8A7580")
 
+  the_child <- c("#ECDEC3", "#D5CEB1", "#D29875",
+                 "#CFBD87", "#A1AA8D", "#EAD598",
+                 "#8A7649", "#72674B", "#7C4839")
+
+  malibu_barbie <- c("#FDD9AF", "#FAA6A1", "#D1842E", "#F87055",
+                     "#FBB70F", "#F7096F", "#F981BB", "#38ABC7",
+                     "#D56007", "#FA9B4D", "#F8735E", "#A4E7DE",
+                     "#D7712B", "#F98411")
+  baroque <- c("#DEDAD4", "#90767A", "#6C6E6D", "#968990",
+               "#9F786B", "#908F92", "#533732", "#363333",
+               "#3C3644")
+
+
   # Combine all the pallets in a list
   all_pallets <- list(lust_for_dark, limoncello, so_very_lovely,
-                      big_poppy, blowin_smoke, youre_golden)
+                      big_poppy, blowin_smoke, youre_golden,
+                      the_child, malibu_barbie, baroque)
 
   # assign the pallets depending on what the user wants
   if ( pallet == "lust_for_dark") {
@@ -45,8 +62,14 @@ colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
     pallet_choice <- all_pallets[[4]]
   } else if (pallet == "blowin_smoke") {
     pallet_choice <- all_pallets[[5]]
+  } else if (pallet == "youre_golden") {
+    pallet_choice <- all_pallets[[6]]
+  } else if (pallet == "the_child") {
+    pallet_choice <- all_pallets[[7]]
+  } else if (pallet == "malibu_barbie") {
+    pallet_choice <- all_pallets[[8]]
   } else {
-    pallet_choice <- all_pallets[[6]] #you're golden
+    pallet_choice <- all_pallets[[9]] #baroque
   }
 
   if(show_me == TRUE){
@@ -79,6 +102,9 @@ colouRpop(pallet = "blowin_smoke", show_me = TRUE)
 colouRpop(pallet = "youre_golden", show_me = TRUE)
 colouRpop(pallet = "lust_for_dark", show_me = TRUE)
 colouRpop(pallet = "so_very_lovely", show_me = TRUE)
+colouRpop(pallet = "the_child", show_me = TRUE)
+colouRpop(pallet = "malibu_barbie", show_me = TRUE)
+colouRpop(pallet = "baroque", show_me = TRUE)
 
 
 
