@@ -24,9 +24,15 @@ colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
                     "#6C7070", "#B4B3BB", "#887D84",
                     "#3B393A", "#7A6F6A", "#353334")
 
+  youre_golden <- c("#F1BFA6", "#FBE3D8", "#C1DEDE", "#ECC79B", "#F2CFD5", "#D9A590",
+                    "#C68B6B", "#BE7C65", "#E5CAB4", "#DE6C5F", "#C5907D", "#E1C4B4",
+                    "#D5AA81", "#E9A68C", "#A87056", "#DA983A", "#BFC8C3", "#84584F",
+                    "#C18762", "#945448", "#CA978A", "#C3755F", "#8C5C52", "#886C5E",
+                    "#62413C", "#9A4C3F", "#694341", "#753323", "#2F4E59", "#8A7580")
+
   # Combine all the pallets in a list
   all_pallets <- list(lust_for_dark, limoncello, so_very_lovely,
-                      big_poppy, blowin_smoke)
+                      big_poppy, blowin_smoke, youre_golden)
 
   # assign the pallets depending on what the user wants
   if ( pallet == "lust_for_dark") {
@@ -37,8 +43,10 @@ colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
     pallet_choice <- all_pallets[[3]]
   } else if (pallet == "big_poppy") {
     pallet_choice <- all_pallets[[4]]
+  } else if (pallet == "blowin_smoke") {
+    pallet_choice <- all_pallets[[5]]
   } else {
-    pallet_choice <- all_pallets[[5]] #blowin smoke
+    pallet_choice <- all_pallets[[6]] #you're golden
   }
 
   if(show_me == TRUE){
@@ -48,7 +56,8 @@ colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
                                    y = seq(1:length(pallet_choice)) ),
                         aes(x = x, y = y)) +
       geom_point(color = pallet_choice, size = 12) +
-      theme_void()
+      theme_void() +
+      ggtitle(pallet)
     # img_plt <- ggdraw() + draw_image("big_poppy.png")
     # #Combine picture and demo plot
     # plot_grid(cute_plot, img_plt, nrow = 1)
@@ -67,6 +76,9 @@ colouRpop <- function(pallet = "lust_for_dark", show_me = FALSE){
 colouRpop(pallet = "limoncello", show_me = TRUE)
 colouRpop(pallet = "big_poppy", show_me = TRUE)
 colouRpop(pallet = "blowin_smoke", show_me = TRUE)
+colouRpop(pallet = "youre_golden", show_me = TRUE)
+colouRpop(pallet = "lust_for_dark", show_me = TRUE)
+colouRpop(pallet = "so_very_lovely", show_me = TRUE)
 
 
 
