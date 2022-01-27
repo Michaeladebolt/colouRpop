@@ -1,5 +1,10 @@
 # colouRpop
-Color pallets based on eyeshadow pallets from ColourPop!
+
+I made some color pallets based on ColourPop's eyeshadow pallets! 
+
+To install the package, run:
+
+devtools::install_github("michaeladebolt/colouRpop", force = TRUE )
 
 
 
