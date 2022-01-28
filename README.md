@@ -1,6 +1,6 @@
 # colouRpop
 
-I made some color palettes based on ColourPop's eyeshadow paletts! Are they the most practical color palettes to make figures with? 
+I made some color palettes based on ColourPop's eyeshadow palettes! Are they the most practical color palettes to make figures with? 
 
 Of course not! But are they fun? I think so! 
 
