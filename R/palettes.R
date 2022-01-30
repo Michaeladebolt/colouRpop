@@ -1,4 +1,4 @@
-## color pallets based on eye shadow pallets
+## color palettes based on eye shadow palettes
 
 colouRpop <- function(palette = "lust_for_dark", show_me = FALSE){
   library(ggplot2)
@@ -55,12 +55,12 @@ colouRpop <- function(palette = "lust_for_dark", show_me = FALSE){
 
 
 
-  # Combine all the pallets in a list
+  # Combine all the palettes in a list
   all_palettes <- list(lust_for_dark, limoncello, so_very_lovely,
                       big_poppy, blowin_smoke, youre_golden,
                       the_child, malibu_barbie, baroque, its_a_mood, its_a_princess_thing)
 
-  # assign the pallets depending on what the user wants
+  # assign the palettes depending on what the user wants
   if ( palette == "lust_for_dark") {
     palette_choice <- all_palettes[[1]]
   } else if ( palette == "limoncello") {
