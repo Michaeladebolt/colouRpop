@@ -83,15 +83,17 @@ ggplot(data = fake_data,
 Below are pictures of the original palettes. These images were taken
 from ColourPop’s website: <https://colourpop.com/>
 
-![Slide1](https://user-images.githubusercontent.com/32584911/151461327-c540d635-1c3f-4679-b654-de96dcadc5f2.jpeg)
-![Slide2](https://user-images.githubusercontent.com/32584911/151461331-779862ed-009e-4951-b9f6-0fa86bbd8e79.jpeg)
-![Slide3](https://user-images.githubusercontent.com/32584911/151461334-6a048769-690a-41a1-8384-275e336b6fcb.jpeg)
-![Slide4](https://user-images.githubusercontent.com/32584911/151461338-0cad8e7c-4f86-4784-b9e0-3238100eacc6.jpeg)
-![Slide5](https://user-images.githubusercontent.com/32584911/151461340-18937faf-e0fe-4136-972a-fb6bfb4b58f3.jpeg)
-![Slide6](https://user-images.githubusercontent.com/32584911/151461343-8130364f-c22b-40a0-85ca-b016835a2b95.jpeg)
-![Slide7](https://user-images.githubusercontent.com/32584911/151461344-16123001-488c-4e2c-9ac9-f8e337cf35ed.jpeg)
-![Slide8](https://user-images.githubusercontent.com/32584911/151461346-b7507998-229f-4036-bbde-8d83fffbc5d3.jpeg)
-![Slide9](https://user-images.githubusercontent.com/32584911/151461347-d8cf097f-f2b7-46e8-b8a4-3196cffb1d61.jpeg)
-![Slide10](https://user-images.githubusercontent.com/32584911/151461350-8c909b79-5417-4a5d-8b2a-4e74af89ff74.jpeg)
-![Slide11](https://user-images.githubusercontent.com/32584911/151461351-c40e5a0a-7e52-4265-a3c7-86b66e3636a7.jpeg)
-![Slide12](https://user-images.githubusercontent.com/32584911/151461355-fa984b28-6325-42a8-a043-a4ba887fc8ee.jpeg)
+
+![1](https://user-images.githubusercontent.com/32584911/151690814-bb9dd93b-dd85-4c25-82d0-5ab69bd52445.png)
+![2](https://user-images.githubusercontent.com/32584911/151690816-16506dd4-52eb-43af-b2de-9c127bfcb5d0.png)
+![3](https://user-images.githubusercontent.com/32584911/151690817-76e64897-aacb-4c07-be81-5516ac114657.png)
+![4](https://user-images.githubusercontent.com/32584911/151690818-a8acad61-a1d3-4eb7-b8dc-6cbda248b4b8.png)
+![5](https://user-images.githubusercontent.com/32584911/151690819-f9e735af-cbc1-4446-9901-fa71e8254c9a.png)
+![6](https://user-images.githubusercontent.com/32584911/151690820-9cead925-a3f7-4e67-8f62-abd1f706fb44.png)
+![7](https://user-images.githubusercontent.com/32584911/151690821-7c134e94-2c6f-4c2d-a9ad-6f99b3df8205.png)
+![8](https://user-images.githubusercontent.com/32584911/151690822-6b745363-7fc8-44f7-8bf5-8d67596d6f32.png)
+![9](https://user-images.githubusercontent.com/32584911/151690824-9f070ede-af8b-401c-ac44-9319019d155f.png)
+![10](https://user-images.githubusercontent.com/32584911/151690825-d3ab5d3e-5428-4424-bdff-db9f5ae5d575.png)
+![11](https://user-images.githubusercontent.com/32584911/151690826-b53e59b0-b8e9-4798-8970-e17c1f9fde5c.png)
+
+
