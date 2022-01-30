@@ -1,55 +1,34 @@
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 # colouRpop
 
-<!-- badges: start -->
-<!-- badges: end -->
+I made some color palettes based on ColourPop's eyeshadow palettes! Are they the most practical color palettes to make figures with? 
 
-I made some color palettes based on ColourPop’s eyeshadow palettes! Are
-they the most practical color palettes to make figures with?
+Of course not! But are they fun? I think so! 
 
-Of course not! But are they fun? I think so!
+Hope you enjoy :) 
 
-Hope you enjoy :)
 
 To install the package, run:
 
-## Installation
-
-You can install the development version of colouRpop from
-[GitHub](https://github.com/) with:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("Michaeladebolt/colouRpop")
 ```
 
-## Example
-
-After you’ve installed the package, to preview what a palette looks like
-you can run:
-
-``` r
+devtools::install_github("michaeladebolt/colouRpop" )
 library(colouRpop)
+
+```
+
+After you've installed the package, to preview what a palette looks like you can run: 
+
+```
+
 colouRpop(palette = "youre_golden", show_me = TRUE)
-```
-
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
-
-``` r
 colouRpop(palette = "its_a_mood", show_me = TRUE)
+
 ```
 
-<img src="man/figures/README-unnamed-chunk-2-2.png" width="100%" />
+To use a palette in a figure, delete the `show_me` argument, or change it to `FALSE` (the default is `FALSE`). You can use the `colouRpop` function directly in a plot, or save the output to an object to use in a plot. For example:
 
-To use a palette in a figure, delete the `show_me` argument, or change
-it to `FALSE` (the default is `FALSE`). You can use the `colouRpop`
-function directly in a plot, or save the output to an object to use in a
-plot. For example:
+```
 
-``` r
-library(ggplot2)
 fake_data <- data.frame(x = as.factor(rnorm(n = 9, mean = 5, sd = 1) ),
                         y = as.factor(rnorm(n = 9, mean = 5, sd = 1)))
 
@@ -58,14 +37,19 @@ ggplot(data = fake_data,
   geom_point(color = colouRpop(palette = "big_poppy"), 
              size = 12.5) +
   theme_void() 
+
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
 
-You can also save the output of the function to an object, and then use
-that object in your plot. For example:
 
-``` r
+![image](https://user-images.githubusercontent.com/32584911/151461007-4afd2a3b-e001-4ae1-a17c-2fbc1b9762e1.png)
+
+
+You can also save the output of the function to an object, and then use that object in your plot. For example:
+
+
+```
+
 colors <- colouRpop(palette = "its_a_mood", show_me = FALSE)
 
 fake_data <- data.frame(x = as.factor(rnorm(n = 28, mean = 5, sd = 1) ),
@@ -76,12 +60,14 @@ ggplot(data = fake_data,
   geom_point(color = colors, 
              size = 12.5) +
   theme_void() 
+
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+![image](https://user-images.githubusercontent.com/32584911/151461131-902f27c3-e807-4762-b7ce-33a7eb6d3008.png)
 
-Below are pictures of the original palettes. These images were taken
-from ColourPop’s website: <https://colourpop.com/>
+Below are pictures of the original palettes. These images were taken from ColourPop's website: https://colourpop.com/
+
+
 
 
 ![1](https://user-images.githubusercontent.com/32584911/151690814-bb9dd93b-dd85-4c25-82d0-5ab69bd52445.png)
@@ -95,5 +81,6 @@ from ColourPop’s website: <https://colourpop.com/>
 ![9](https://user-images.githubusercontent.com/32584911/151690824-9f070ede-af8b-401c-ac44-9319019d155f.png)
 ![10](https://user-images.githubusercontent.com/32584911/151690825-d3ab5d3e-5428-4424-bdff-db9f5ae5d575.png)
 ![11](https://user-images.githubusercontent.com/32584911/151690826-b53e59b0-b8e9-4798-8970-e17c1f9fde5c.png)
+
 
 
