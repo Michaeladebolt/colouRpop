@@ -23,10 +23,31 @@ After you've installed the package, to preview what a palette looks like you can
 ```
 
 colouRpop(palette = "youre_golden", show_me = TRUE)
-colouRpop(palette = "its_a_mood", show_me = TRUE)
-colouRpop(palette = "the_child", show_me = TRUE)
 
 ```
+
+![image](https://user-images.githubusercontent.com/32584911/151691852-ac328d90-e1bd-46d1-9b1c-d719a066f09f.png)
+
+```
+colouRpop(palette = "its_a_mood", show_me = TRUE)
+```
+![image](https://user-images.githubusercontent.com/32584911/151691884-6705eb08-e5d1-42c8-bc44-69adbeea876d.png)
+
+
+```
+colouRpop(palette = "the_child", show_me = TRUE)
+```
+
+![image](https://user-images.githubusercontent.com/32584911/151691893-71e7f8e7-01c4-4f51-9f29-762992222342.png)
+
+
+```
+colouRpop(palette = "limoncello", show_me = TRUE)
+
+```
+
+![image](https://user-images.githubusercontent.com/32584911/151691931-3cc65bc5-a5d8-4b81-bf81-8a0e23b53395.png)
+
 
 ## Use the palettes
 To use a palette in a figure, delete the `show_me` argument, or change it to `FALSE` (the default is `FALSE`). You can use the `colouRpop` function directly in a plot, or save the output to an object to use in a plot. For example:
