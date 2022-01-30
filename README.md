@@ -22,12 +22,11 @@ After you've installed the package, to preview what a palette looks like you can
 
 ```
 
-colouRpop(palette = "youre_golden", show_me = TRUE)
+colouRpop(palette = "malibu_barbie", show_me = TRUE)
 
 ```
 
-![image](https://user-images.githubusercontent.com/32584911/151691852-ac328d90-e1bd-46d1-9b1c-d719a066f09f.png)
-
+![image](https://user-images.githubusercontent.com/32584911/151692078-9512e4cf-8f86-49f7-b57c-5d6ff3b4a614.png)
 ```
 colouRpop(palette = "its_a_mood", show_me = TRUE)
 ```
