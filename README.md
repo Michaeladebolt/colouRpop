@@ -1,4 +1,4 @@
-# Welcome to colouRpop
+# Welcome to colouRpop!
 
 I made some color palettes based on ColourPop's eyeshadow palettes! Are they the most practical color palettes to make figures with? 
 
