@@ -1,4 +1,4 @@
-# colouRpop
+# Welcome to colouRpop
 
 I made some color palettes based on ColourPop's eyeshadow palettes! Are they the most practical color palettes to make figures with? 
 
@@ -7,6 +7,7 @@ Of course not! But are they fun? I think so!
 Hope you enjoy :) 
 
 
+## Installation
 To install the package, run:
 
 ```
@@ -16,15 +17,18 @@ library(colouRpop)
 
 ```
 
+## Preview palettes
 After you've installed the package, to preview what a palette looks like you can run: 
 
 ```
 
 colouRpop(palette = "youre_golden", show_me = TRUE)
 colouRpop(palette = "its_a_mood", show_me = TRUE)
+colouRpop(palette = "the_child", show_me = TRUE)
 
 ```
 
+## Use the palettes
 To use a palette in a figure, delete the `show_me` argument, or change it to `FALSE` (the default is `FALSE`). You can use the `colouRpop` function directly in a plot, or save the output to an object to use in a plot. For example:
 
 ```
@@ -65,6 +69,7 @@ ggplot(data = fake_data,
 
 ![image](https://user-images.githubusercontent.com/32584911/151461131-902f27c3-e807-4762-b7ce-33a7eb6d3008.png)
 
+## View all the palettes
 Below are pictures of the original palettes. These images were taken from ColourPop's website: https://colourpop.com/
 
 
