@@ -1,5 +1,8 @@
 # Welcome to colouRpop!
 
+![colouRpop (100 × 100 px) (250 × 250 px)](https://user-images.githubusercontent.com/32584911/152432805-8f4c5de1-682c-466e-ab72-a1e4c3a4eb85.png)
+
+
 I made some color palettes based on ColourPop's eyeshadow palettes! Are they the most practical color palettes to make figures with? 
 
 Of course not! But are they fun? I think so! 
